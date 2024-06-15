@@ -3,6 +3,9 @@
 # Install Flask-Migrate
 pip install Flask-Migrate
 
+# Verify Flask-Migrate installation
+pip show Flask-Migrate
+
 # Run database migrations
 flask db upgrade
 
