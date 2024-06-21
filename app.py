@@ -5,7 +5,11 @@ from flask import Flask, redirect, render_template, request, send_from_directory
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf.csrf import CSRFProtect
+import logging
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__, static_folder='static')
 csrf = CSRFProtect(app)
@@ -24,6 +28,9 @@ app.config.update(
     SQLALCHEMY_DATABASE_URI=app.config.get('DATABASE_URI'),
     SQLALCHEMY_TRACK_MODIFICATIONS=False,
 )
+
+# Log the database URI for debugging purposes
+logger.info('SQLALCHEMY_DATABASE_URI: %s', app.config.get('DATABASE_URI'))
 
 # Initialize the database connection
 db = SQLAlchemy(app)
