@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 
 .azure
+
+# Logs and temporary files
+extracted_logs/
+webapp_logs.zip
