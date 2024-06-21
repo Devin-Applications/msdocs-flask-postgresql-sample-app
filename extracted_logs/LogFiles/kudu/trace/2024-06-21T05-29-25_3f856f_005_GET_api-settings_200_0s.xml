@@ -1,4 +1,0 @@
-<step title="Incoming Request" date="2024-06-21T05:29:25.122" instance="3f856f" url="/api/settings" method="GET" type="request" pid="87,1,28" Accept="*/*" Host="web-app-un4rh.scm.azurewebsites.net" User-Agent="AZURECLI/2.61.0 (DEB)" Accept-Encoding="gzip, deflate" Authorization="Bas..." x-ms-client-request-id="34277fad-2f8f-11ef-979a-57a400d0f32b" X-ARR-LOG-ID="610891a2-e438-4547-b1f0-3799b811f259" CLIENT-IP="52.12.55.86:16741" X-Client-IP="52.12.55.86" X-SITE-DEPLOYMENT-ID="web-app-un4Rh" WAS-DEFAULT-HOSTNAME="web-app-un4rh.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/settings" X-Client-Port="16741" >
-  <step title="Cleanup Xml Logs" date="2024-06-21T05:29:25.124" /><!-- duration: 5ms -->
-  <step title="Outgoing response" date="2024-06-21T05:29:25.135" type="response" statusCode="200" statusText="OK" /><!-- duration: 2ms -->
-</step><!-- duration: 25ms -->

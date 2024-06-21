@@ -1,3 +1,0 @@
-<step title="Startup Request" date="2024-06-21T04:20:31.876" instance="3f856f" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="92,1,7" SCM_DO_BUILD_DURING_DEPLOYMENT="True" ScmType="None" >
-  <step title="Cleanup Xml Logs" date="2024-06-21T04:20:31.882" /><!-- duration: 5ms -->
-</step><!-- duration: 15ms -->

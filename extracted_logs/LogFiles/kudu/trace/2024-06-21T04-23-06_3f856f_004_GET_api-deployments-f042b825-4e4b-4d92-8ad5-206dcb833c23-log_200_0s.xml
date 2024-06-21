@@ -1,6 +1,0 @@
-<step title="Incoming Request" date="2024-06-21T04:23:06.449" instance="3f856f" url="/api/deployments/f042b825-4e4b-4d92-8ad5-206dcb833c23/log" method="GET" type="request" pid="92,1,14" Accept="*/*" Host="web-app-un4rh.scm.azurewebsites.net" User-Agent="AZURECLI/2.61.0 (DEB)" Accept-Encoding="gzip, deflate" Authorization="Bas..." x-ms-client-request-id="f3108eaf-2f85-11ef-979a-57a400d0f32b" X-ARR-LOG-ID="e8f871d4-895a-4d43-bfe6-8bcc89cdf62b" CLIENT-IP="52.12.55.86:10326" X-Client-IP="52.12.55.86" X-SITE-DEPLOYMENT-ID="web-app-un4Rh" WAS-DEFAULT-HOSTNAME="web-app-un4rh.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/f042b825-4e4b-4d92-8ad5-206dcb833c23/log" X-Client-Port="10326" >
-  <step title="DeploymentService.GetLogEntry" date="2024-06-21T04:23:06.463" >
-    <step title="DeploymentManager.GetLogEntries(id:f042b825-4e4b-4d92-8ad5-206dcb833c23)" date="2024-06-21T04:23:06.466" /><!-- duration: 12ms -->
-  </step><!-- duration: 18ms -->
-  <step title="Outgoing response" date="2024-06-21T04:23:06.488" type="response" statusCode="200" statusText="OK" /><!-- duration: 3ms -->
-</step><!-- duration: 44ms -->
