@@ -1,5 +1,5 @@
 import os
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 # Configure Postgres database based on connection string of the libpq Keyword/Value form
 # https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING
@@ -10,15 +10,15 @@ if not conn_str:
 # Log the connection string for debugging purposes
 print(f"Connection string: {conn_str}")
 
-# Parse the connection string as a URL
-parsed_url = urlparse(conn_str)
+# Parse the connection string as a DSN (Data Source Name)
+conn_str_params = parse_qs(conn_str.replace(';', '&'))
 
-# Log the parsed URL components for debugging purposes
-print(f"Parsed URL: {parsed_url}")
+# Log the parsed connection string parameters for debugging purposes
+print(f"Parsed connection string parameters: {conn_str_params}")
 
 DATABASE_URI = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
-    dbuser=parsed_url.username,
-    dbpass=parsed_url.password,
-    dbhost=parsed_url.hostname,
-    dbname=parsed_url.path[1:]  # Remove leading '/' from path
+    dbuser=conn_str_params['User Id'][0],
+    dbpass=conn_str_params['Password'][0],
+    dbhost=conn_str_params['Server'][0],
+    dbname=conn_str_params['Database'][0]
 )
