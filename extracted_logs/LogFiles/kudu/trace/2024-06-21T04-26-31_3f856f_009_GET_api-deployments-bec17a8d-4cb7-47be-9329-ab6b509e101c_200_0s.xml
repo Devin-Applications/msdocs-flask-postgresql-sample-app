@@ -1,0 +1,4 @@
+<step title="Incoming Request" date="2024-06-21T04:26:31.201" instance="3f856f" url="/api/deployments/bec17a8d-4cb7-47be-9329-ab6b509e101c" method="GET" type="request" pid="92,1,3" Host="web-app-un4rh.scm.azurewebsites.net" Authorization="Bas..." X-ARR-LOG-ID="f471696f-f06b-4906-a08b-e7e7c60926af" CLIENT-IP="20.119.0.19:15489" X-Client-IP="20.119.0.19" X-SITE-DEPLOYMENT-ID="web-app-un4Rh" WAS-DEFAULT-HOSTNAME="web-app-un4rh.scm.azurewebsites.net" X-MS-PLATFORM-INTERNAL="True" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/bec17a8d-4cb7-47be-9329-ab6b509e101c" X-Client-Port="15489" >
+  <step title="DeploymentService.GetResult" date="2024-06-21T04:26:31.207" /><!-- duration: 37ms -->
+  <step title="Outgoing response" date="2024-06-21T04:26:31.255" type="response" statusCode="200" statusText="OK" /><!-- duration: 4ms -->
+</step><!-- duration: 61ms -->
